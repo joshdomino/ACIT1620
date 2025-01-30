@@ -2,7 +2,8 @@
     font-size: 50px;
     font-weight: 900;
     text-align: center;
-    border-bottom: 5px solid black;}
+    border-bottom: 5px solid black;
+    margin-bottom: -2px;}
 
 body {background-color: rgb(208, 195, 178);}
 
@@ -60,5 +61,5 @@ p, ul {text-align: center;
 }
 
 
-
+a{text-align: center;}
 
