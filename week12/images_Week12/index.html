@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 20px;
+        }
+        img {
+            margin: 20px;
+        }
+    </style>
+    <script>
+        // window.onload = pageLoadedHandler;
+        // function pageLoadedHandler() {
+        //     alert("im alive");
+        // }
+        window.onload = init;
+
+        function init() {
+            let image = document.getElementsByTagName("img");
+            for (let i = 0; i < images.length; i++) {
+                images[i].onclick = showAnswer;
+            }
+        }
+
+        function reblur(image) {
+            let image = image.id;
+            name = "/week12/images_Week12/" + name + "blur.jpg";
+            image.src = name;
+
+
+            setTimeout(reblur, 2000, image);
+        }
+            
+        
+    </script>
+</head>
+<body>
+    <img id="zero" src="zeroblur.jpg">
+    <img id="one" src="oneblur.jpg">
+    <img id="two" src="twoblur.jpg">
+    <img id="three" src="threeblur.jpg">
+    <img id="four" src="fourblur.jpg">
+    <img id="five" src="fiveblur.jpg">
+</body>
+</html> -->
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="colorBtn"> Click Me</button>
+
+    <script>
+        let button = document.getElementById("colorBtn");
+        button.addEventListener("click", function() {
+            document.body.style.backgroundColor = "lightblue";
+        }
+    );
+
+    button.addEventListener("dblclick", function) {
+        document.body.style.backgroundColor = "white";
+    }
+    </script>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("keydown", function(event) {
+        document.getElementById("keyOutput").textContent = 
+        `key Pressed: ${event.key}`';
+    });
+    
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parse example</title>
+</head>
+<body>
+    <h2> convert a json sstring into an object </h2>
+    <p id="convertobj"></p>
+    <p id="convertstring"></p>
+
+    <script>
+        const person = '{"name":"bob", "age":20, "city": "Toronto"}';
+        const obj = JSON.parse(person);
+        document.getElementById("convertobj").innerHTML = 
+        obj.name + ", " + obj.age + ", " + obj.city;
+        const jsonString = JSON.stringify(obj);
+        document.getElementById("convertstring").innerHTML = jsonString;
+    </script>
+</body>
+</html>
